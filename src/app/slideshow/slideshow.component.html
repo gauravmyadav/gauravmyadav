@@ -1,15 +1,33 @@
 <div class="banner">
-    <p>{{ daysRemaining }} days left until our wedding on December 15, 2023!</p>
+    <p>{{ daysRemaining }} days left until Shefali-Gaurav wedding on December 15, 2023!</p>
   </div>
-<div class="slideshow-container">
-    <div class="image-container">
-      <img *ngFor="let photo of photos; let i = index" [src]="photo" [style.display]="i === currentIndex ? 'block' : 'none'" />
+  <div class="layout-container">
+    <div class="left-banner">
+      <div class="banner">
+        <p>Ladke Waale</p>
+      </div>    
+      <img src="assets/faces/person1.jpg" alt="Person 1" class="face">
+      <img src="assets/faces/person2.jpg" alt="Person 2" class="face">
+      <img src="assets/faces/person5.jpg" alt="Person 5" class="face">
+      <img src="assets/faces/person6.jpg" alt="Person 6" class="face">
+
     </div>
 
+<div class="slideshow-container">
+      <img *ngFor="let photo of photos; let i = index" [src]="photo" [style.display]="i === currentIndex ? 'block' : 'none'" />
+</div>
+    <div class="right-banner">
+      <div class="banner">
+        <p>Ladki Waale</p>
+      </div>    
+      <img src="assets/faces/person3.jpg" alt="Person 3" class="face">
+      <img src="assets/faces/person4.jpg" alt="Person 4" class="face">
+    </div>
     <audio autoplay loop>
       <source src="assets/audio/weddingsong.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+l̥
   </div>
 
   
